@@ -141,6 +141,15 @@ nav button {
   /* color: var(--color-bg2); */
 }
 
+
+/* CHANGE NAVBAR STYLE ON SCROLL USING JS  */
+.window_scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+  transition: var(--transition);
+  
+}
+
 /* *************** HEADER SECTION ************* */
 header {
   position: relative;
