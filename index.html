@@ -18,11 +18,13 @@
     href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Montserrat:wght@300;400;500;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
+  <!-- Using Swiper's css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
   <!-- Link to CSS files -->
   <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Link to JS file -->
-  <script src="./main.js" defer></script>
+
 
   <title>Responsive School Website</title>
 </head>
@@ -315,12 +317,12 @@
   </section>
 
   <!-- ------------------------- TESTIMONIAL SECTION ---------------------------- -->
-  <section class="container testimonials__container">
-    <h2>Testimonial's Stucdent</h2>
-    <div>
+  <section class="container testimonials__container mySwiper">
+    <h2>Testimonial's Student</h2>
+    <div class="swiper-wrapper">
 
       <!-- Testimonial 1 -->
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./assets/images/avatar1.jpg">
         </div>
@@ -335,7 +337,7 @@
       </article>
 
       <!-- Testimonial 2 -->
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./assets/images/avatar2.jpg">
         </div>
@@ -350,7 +352,7 @@
       </article>
 
       <!-- Testimonial 3 -->
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./assets/images/avatar3.jpg">
         </div>
@@ -365,7 +367,7 @@
       </article>
 
       <!-- Testimonial 4 -->
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./assets/images/avatar4.jpg">
         </div>
@@ -380,7 +382,7 @@
       </article>
 
       <!-- Testimonial 5 -->
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./assets/images/avatar5.jpg">
         </div>
@@ -394,7 +396,24 @@
         </div>
       </article>
     </div>
+    <div class="swiper-pagination"></div>
+
   </section>
+
+  <!-- Link to JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./main.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 
